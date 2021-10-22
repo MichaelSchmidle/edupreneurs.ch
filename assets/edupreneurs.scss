@@ -1,0 +1,38 @@
+$primary: #AE132A;
+$enable-responsive-font-sizes: true;
+$font-family-sans-serif: 'Open Sans', sans-serif !default;
+
+@import "bootstrap/scss/bootstrap.scss";
+
+body {
+    color: #310008;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+main {
+    flex: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+footer {
+    @extend small;
+    a {
+    color: $gray-400;
+    }
+    a:hover {
+        color: $gray-200;
+    }
+    svg {
+        max-height: 1rem;
+        max-width: 2.5rem;
+    }
+}
+.jumbotron svg {
+    max-height: 10rem;
+}
+
+.card {
+    @extend .shadow;
+}
